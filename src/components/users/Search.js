@@ -22,7 +22,6 @@ export class Search extends Component {
             this.props.searchUsers(this.state.text);
             this.setState({text: ''});
         }
-       
     }
 
     onChange = (e) => this.setState({[e.target.name]: e.target.value});
@@ -33,7 +32,7 @@ export class Search extends Component {
             <div>
                 <form className="form" onSubmit={this.onSubmit}>
                     <input type="text" name="text" value={this.state.text} onChange={this.onChange} placeholder="Search User.." />
-                    <input type="submit" value="Search" className="btn btn-dark btn-block" />
+                    <input type="submit" value="Search" className="btn btn-block" style={{backgroundColor: "lightpink"}} />
                 </form>
                 {showClear && <button className="btn btn-light btn-block" onClick={clearUsers}>Clear</button>}
             </div>
