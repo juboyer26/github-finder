@@ -1,10 +1,10 @@
-import React, {Fragment} from 'react';
+import React, { Fragment } from 'react';
 import spinner from './Curve-Loading.gif'
 
 const Spinner = () => {
     return (
         <Fragment>
-            <img src={spinner} alt="loading.." style={{width: '200px', margin:'auto', display:'block'}}/>
+            <img src={spinner} alt="loading.." style={{ width: '200px', margin: 'auto', display: 'block' }} />
         </Fragment>
     )
 }

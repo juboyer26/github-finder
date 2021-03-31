@@ -8,32 +8,32 @@ import {
 } from '../types';
 
 export default (state, action) => {
-    switch(action.type) {
+    switch (action.type) {
         case GET_REPOS:
-            return{
+            return {
                 ...state,
                 repos: action.payload,
                 loading: false
             }
         case GET_USER:
-            return{
+            return {
                 ...state,
                 user: action.payload,
                 loading: false
             }
-        case CLEAR_USERS:{
-            return{
+        case CLEAR_USERS: {
+            return {
                 ...state,
                 users: [],
                 loading: false
             };
         }
         case SEARCH_USERS:
-           return {
+            return {
                 ...state,
                 users: action.payload,
                 loading: false,
-           }
+            }
         case SET_LOADING:
             return {
                 ...state,
